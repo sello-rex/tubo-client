@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import querystring from 'query-string';
+import loader from '../loader.gif';
 const API = 'http://localhost:3001';
 const initialState = {
   url: '',
@@ -101,13 +102,9 @@ class SearchBar extends Component {
             <input disabled={this.state.loading} type={this.state.downloadable ? 'hidden':'submit'} className="paper-btn btn-secondary-outline" value="Covert"/>
             <input type={this.state.downloadable ? 'button':'hidden'} onClick={this.convertAnother} className='paper-btn btn-primary-outline' value="Convert Another"/>
             <input type={this.state.downloadable ? 'button':'hidden'} onClick={this.download} className="paper-btn btn-danger-outline" value="Download"/>
-            <div className={this.state.loading ? 'spinner-box':'spinner-box hidden'}>
-              <div className="configure-border-1">  
-                <div className="configure-core"></div>
-              </div>  
-              <div className="configure-border-2">
-                <div className="configure-core"></div>
-              </div> 
+            <div className={this.state.loading ? 'loader-container':'loader-container hidden'}>
+              <img src={loader} alt="loader gif"/>
+              <span>converting...</span>
             </div>
           </div>
         </form>
