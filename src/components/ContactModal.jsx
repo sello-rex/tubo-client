@@ -27,7 +27,7 @@ class ContactModal extends Component {
   }
 
   onSubmit = event =>{
-    fetch("/", {
+    fetch("/contact-us", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: this.encode({ "form-name": "contact-us-form", ...this.state })
@@ -52,8 +52,7 @@ class ContactModal extends Component {
         timer: 4000
       })
     }).finally(()=>{
-      document.querySelector('.btn-close').click()
-      console.log('done!!!')
+      document.querySelector('.btn-close').click();
     });
 
     event.preventDefault();
