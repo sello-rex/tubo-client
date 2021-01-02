@@ -30,7 +30,7 @@ class ContactModal extends Component {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({ "form-name": "contact-us", ...this.state })
+      body: this.encode({ "form-name": "contact-us-form", ...this.state })
     })
     .then(() =>{
       Swal.fire({
@@ -73,7 +73,7 @@ class ContactModal extends Component {
             <h4 className="modal-title">Have something to say?</h4>
             <h5 className="modal-subtitle">Speak your mind, we are here to listen.</h5>
             <p className="modal-text">You do no need to tell us your name or your email, we just want to know your thoughts, though they would be great have so we can reply to you.</p>
-            <form onSubmit={ this.onSubmit } name="contact-us-form" data-netlify="true">
+            <form onSubmit={ this.onSubmit }>
               <div className="form-group">
                 <label htmlFor="name">Name <small>(optional)</small></label>
                 <input className="input-block" onChange={ this.handleInput } value={ this.state.name } type="text" name="name" id="name" />
@@ -97,6 +97,7 @@ class ContactModal extends Component {
               <div className="form-group">
                 <button type="submit" className="btn-block">Send { this.state.category }</button>
               </div>
+              <input type="hidden" name="form-name" value="contact-us-form" />
             </form>
           </div>
         </div>
