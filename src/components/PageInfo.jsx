@@ -16,7 +16,7 @@ class PageInfo extends Component {
             <strong><em><a href="/">Tubo</a></em></strong> is free youtube to mp3 convertor service, our easy to use convertor you can convert <a href="https://www.youtube.com">YouTube</a> videos to audio (mp3) or video (mp4) files and download them for absolutely free - this service works on all modern browsers, on desktop, tablet and mobile(where you manage your own file system).
           </p>
           <p>
-            The videos are always converted in the highest available quality. In opposition to other websites, you are able to convert videos which are not available or are blocked in your country. Please note that we can only convert videos up to a length of 3 hours - the limitation is necessary, so the conversion of any video will not take more than a few of minutes.
+            The videos are always converted in the highest available quality. In opposition to other websites, you are able to convert videos which are not available or are blocked in your country. Please note that we can only convert videos up to a length of 3 hours - the limitation is necessary, so the conversion of any video will not take more than a few of minutes. The file will only be on our servers for 30 minutes before being deleted
           </p>
           <p>
             Let's tubo away!!

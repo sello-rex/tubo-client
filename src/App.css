@@ -125,12 +125,28 @@ ol li {
 }
 
 #footer {
+  position: relative;
   font-family: Neucha,sans-serif;
   text-align: center;
   font-size: .8em;
   padding: 10px 0;
 }
 
+#contact-us-btn {
+  margin-left: 10px;
+  font-size: 1.2em;
+  color: #3880b0;
+  font-weight: 600;
+}
+
+#contact-us-btn:hover, #contact-us-btn:focus {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.form-group > label, .form-group > button {
+  text-transform: capitalize;
+}
 
 @media screen and (max-width: 450px){
   #url-label {
