@@ -4,7 +4,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 import querystring from 'query-string';
 import loader from '../loader.gif';
-const API = window.location.host.search('localhost') !== -1 ? 'http://localhost:3001':'https://tuboapp.herokuapp.com';
+const API = window.location.host.search('localhost') !== -1 ? 'http://localhost:3001':'https://tubo-309312.uc.r.appspot.com/';
 const initialState = {
   url: '',
   downloadable: false,
